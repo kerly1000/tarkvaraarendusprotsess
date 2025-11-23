@@ -26,63 +26,34 @@
         <li><h3>Iteratsioon parandamiseks -</h3> parandatakse prototüüpi, kuni see rahuldab kasutajat ning vastab tema<br/>
         ootustele. Samal ajal on võimalik arendajal omandada uusi teadmisi kliendi soovide kohta<br/>
         </li></ul>
-
-        kirjeldatakse ära üldjoonstes, mida tarkvaratoode tegema peab. nõuded jaotatakse ka ära tähtsamateks ja vähemtähtsamateks. tähtsamad nõuded on tavaliselt need, mis kliendile rohkem väärtust toovad. siin määratakse ära ka, kuidas arendustöö toimima hakkab ehk millistes<br/>
-        inkrementides klient oma toodet saama hakkab ehk kui pika aja tagant. iga inkrement peab tarnima kliendile mingisuguse toimiva tooteosakese.<br/>
-        <h3>süsteemi arendus</h3>
-        kui nõuded on olemas ning ära jaotatud prioriteedi järgi, hakatakse toodet tarnima peale nüüd teostatavat arendusprotsessi. siin arendataksegi välja vastavat nõuetele programmiosa.<br/>
-        iga inkrementi saab arendada kasutades erinevaid eksisteerivaid arendusmudeleid. näiteks kui on programmi osa, mis väga palju muutmist ei vaja, näiteks faili arvutist lugemist või sinna kirjutamist,<br/>
-        siis on seda programmiosa või funktsiooni võimalik arendada ka näiteks jäiga mudeli ehk kosemudeliga või agiilse mudeliga. see, milline arendusmudel kõige paremini sobib, on arendusmeeskonna otsustada vastavalt sellele, milline programmipsa parasjagu arendusel on.<br/>
-        <h3>arendusega samaaegne nõuetetäiendus</h3>   
-        kui arendatava programmiosa nõuded on külmutatud ehk neid ei saa hetkel muuta, siis muude mittearenduses olevate osade nõudeid on võimalik muuta ning nüüd kui mingisugune programmiosa läbib parasjagu arendustsüklit, on võimalik muuta muid nõudeid,<br/>
-        millele vastav inkrement kas hetkel arenduses enam ei ole või veel ei ole. kõik muud nõuded on lahtised. see tähendab ka ühtlasi seda, et kui üks programmiosa on nõuete väljaselgitamise lõpetanud, saab seda arendama asuda enne kui<br/>
-        nõuded täielikult valmis on. <br/><br/>
-        <h3>tarne ja integratsioon</h3>
-        nõudele vastava programmiosa valmimisel tarnitakse programmi osa ehk inkrement kliendile. klient saab selle siis koheselt kasutusele võtta või omapoolselt läbi testida ja täpsustada edasisi projektinõudeid ja anda tagasisidet valminud programmiosa kohta.<br/>
-        selle põhjal võidakse tuletada juba valminud osale uusi nõudeid. klient saab siis ka valminud osa koheselt integreerida muu olemasoleva eelnevalt arendatud toote süsteemiga või olemasoleva keskkonnaga. <br/><br/>
-        </p><br/><br/>
-        <h2>inkrementaalse arenduse head ning halvad küljed</h2>
-        <p>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>head küljed</th>
-                        <th>halvad küljed</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>kulutused on väiksemad, kuna kasutaja nõuded on väiksemad, aga muudatusi saab sisse viia arendustsükli käigus, on nende muudatuste kulud väiksemad, kuna arendustsükkel ise ei ole vaja lõpuni viia enne muudatuste sisseviimist</td>
-                        <td>
-                            progressi jälgimine on keerukas- arendustöö progressi ei jälgita enam arendatud nõuete järgi, kuna need ei ole arendustöö alguses valmis, vaid prograssi jälgitakse arenduskiiruse põhiselt- kui palju igas<br/>
-                            ajavahemikus nõuetest arendada on võimalik. see tekitab siis halduritele nõude, et nad vajavad pidevalt dokumentatsiooni arendustöö hetke kulgemise kohta. kui arendustöö on ka kiire, siis vahest on ka selle dokumentatsiooni<br/>
-                            hankimine keeruline, kuna iga väikese versiooni kohta ei ole mõtet seda lihtsalt tekitadagi.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>kliendi tagasiside on kohene- olemasolevale arendustööle saab meeskond keset arendust tagasiside, et vajadusel muuta oma nõudeid ja seega muuta arendussuunda. klient näeb ka, kui palju on tehtud.<br/></td>
-                    <td>süsteemi struktuur aja  jooksul degredeerub, kuna arendatakse juurde pidevalt uusi osi ning vahepeal ka selliseid, mida alguses planeeritud ei olnud. siis kipub arendatava toote sisemine süsteem spagetistuma.<br/>
-                    selle vältimiseks kulutatakse lisaraha ja -aega koodi refaktoreerimisele, et sisemine struktuur korras hoida. kui korrashoidu ei teostata, onhilisem muudatuste ja uute valmisosade integratsioon<br/>
-                    tunduvalt keerulisem.</td>
-                    </tr>
-                    <tr>
-                        <td>tarne on kiirem- kliend saab juba funktsioneerivad osad kohe pärast arendustöö lõppu kasutusele võtta ning klient saab sellest varem kasu kui näiteks tarkvaratootega, mida arendatakse<br/>
-                        jäiga arendusmudeliga</td>
-                        <td></td>
-                    </tr>
+                
                 </tbody>
-                        </table>
-                        <h2>arendusmudeli joonis</h2>
-                        <img src="../pildid/prototüüpimine.jpeg"/>  <br/><br/>
-                        <h2>mis vahe on inkrementaalsel SDLCl ja iteratiivsel SDLCl?</h2>
+            <h2>arendusmudeli joonis</h2>
+            <img src="../pildid/prototüüpimine.jpeg"/>  <br/><br/>
+            
                         <p>
-kuna inkrementaalne asendus ja iteratiivne arendus opn lihtsalt sarnased sõnad, kipuvad nad inimestel sassi minema, aga nad siiski tähendavad erinevaid asju.<br/>
+            Prototüübi arendamisel on oluline selle loomise kiirus ning selleks kasutatakse abivahendina kiire prototüüpimise<br/>
+            keeli ja tööriistu. See ei pea sisaldama kõike, mis on oluline lõpp-tootes, vaid keskendutakse sellele, mida on vaja<br/>
+            esile tuua, et paremini mõista või näha. Prototüüp ei sisalda vigade kontrolli, see on suunatud funktsionaalsusele.<br/><br/>
+
+            Prototüüpidel on erinevad põhimõtted:<br/>
                             <ul>
-                                <li><h3>inkrementaalne arendus</h3> - on tarkvaratoote arendus, kus iga inkremendi raames valmib toimiv tarkvara osa. valmissaadud tarkvaraosake integreeritakse<br/>
-                                    muu süsteemiga, mis eelnevalt arendatud.</li>
-                                    <li><h3>iteratiivne arendus</h3> - on muutmisstrateegia, kus parandatakse või tehakse ringi juba olemasolev süsteem, et seda täiustada ehk olemasolev süsteem saab<br/>
-                                    uue ja parema variandi ehk iteratsiooni.</li>
+                                <li><h3>ühekordne prototüüpimine</h3>(throw away prototyping)</li>
+                                <li><h3>evolutsiooniline prototüüpimine</h3>(evolutionary prototyping)</li>
+                                <li><h3>lisanduv prototüüpimine</h3>(incremental prototyping)</li>
                             </ul>
+
+        Ühekordsed prototüübid likvideeritakse peale loomist, sest nad ei ole heaks aluseks tegelikule arendusele-<br/>
+        näiteks ei saa nende alusel täita funktsionaalseid nõudeid, selle struktuur ei sobi edasiseks arenduseks<br/>
+        ega vasta ka muudele kvaliteedinõuetele.<br/><br/>
+
+        Kokkuvõttes- erinevalt koskmudelist ei koostata iteratiivsete arendusmudelite järgi esmalt suuremahulist ja kõikehõlmavat<br/>
+        analüüsi, mis sisaldab muutumatuid vajadusi ning kinnitatakse kliendi ja arendaja vahel range dokument, mis takistab<br/>
+        vajadusel plaanis muudatuste tegemist. Iteratiivsed mudelid võimaldavad vajadusel teha süsteemis muudatusi, saada kasutajatelt<br/>
+        pidevalt tagasisidet, testida projekti varajases järgus süsteemi ülesehituse sobivust jms.<br/><br/>
+
+        Ei ole olemas ühte kõige paremat arendusmudelit. Otsus, milline mudel valida, sõltub konkreetsest projektist:<br/>
+        lõpptootest, meeskonna oskustest ja teadmistest, ajagraafikust ning kliendi vajaduse selgusest ja stabiilsusest.<br/><br/>
                         </p>     
                     </p>
                     <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1224_prototpimine.html">
