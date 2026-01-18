@@ -6,63 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minu tarkvara arendusprotsessi ainemapp</title>
     <style>
-        body {font-size: larger;background-color: rgb(247, 241, 218);}
+        body {font-size: larger;background-color: rgb(247, 241, 218); margin: 10;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 65ch; 
+            margin: 0 auto;
+            padding: 24px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Mis on CASE vahendid</h1><br/>
+    <div class="container">
+    <h1>Mis on CASE vahendid</h1>
     <p>
-        Tarkvaraarenduse elutsükkel koosneb mitmetest etappidest, mille tegevused<br/>
-        on väga erinevad, kuid igal sammul on siiski arendatava tarkvara jaoks vajalikud tegevused.<br/>
-        Nendel tegevustel kasutatakse tööriistu, mida tuntakse kui tarkvara reaaltehnoloogia<br/>
-        (inglise keeles CASE-vahendid).<br/>
-        <h2>CASE-vahend?</h2>
-        CASE on akronüüm inglisekeelsest terminist "Computer-Aided Software Engineering".
-    </p><br/><br/>
-    <h1>Kuidas CASE-vahendeid kasutatakse?</h1><br/>
+        Tarkvaraarenduse elutsükkel koosneb mitmetest etappidest, mille tegevused on väga erinevad, kuid igal sammul on siiski arendatava tarkvara jaoks vajalikud tegevused.
+        Nendel tegevustel kasutatakse tööriistu, mida tuntakse kui tarkvara reaaltehnoloogia ehk CASE vahendid, mille nimetus tuleb inglise keelsest terminist "Computer-Aided 
+        Software Engineering".
+    </p> 
+    <h2>Kuidas CASE-vahendeid kasutatakse?</h2>
     <p>
-        CASE-vahendeid kasutatakse erinevates arendusetappides ja need võimaldavad/lihtsustavad arendajal selliseid tegevusi nagu<br/>
-        nõuete analüüs, erinevate protsesside voolukujundamine, ajakava seadmine, dokumentatsiooni genereerimine,<br/>
-        versioonihaldus dokumentatsioonile või arendatavale tarkvarale, arendustöö teostamine, <br/>
-        arendusmeeskonna ja arendustöö organiseerimine, prototüübi genereerimine jms.<br/>
-        Sellel eesmärgil kategoriseeritaksegi CASE vahendid kahte peamisesse kategooriasse.<br/>
+        CASE-vahendeid kasutatakse erinevates arendusetappides ja need võimaldavad/ lihtsustavad arendajal selliseid tegevusi nagu
+        nõuete analüüs, erinevate protsesside voolukujundamine, ajakava seadmine, dokumentatsiooni genereerimine, versioonihaldus dokumentatsioonile või arendatavale tarkvarale, 
+        arendustöö teostamine, arendusmeeskonna ja arendustöö organiseerimine, prototüübi genereerimine jms. CASE vahendid lubavad teha mingi ühe tegevuse või otsast-otsani 
+        arendustööd. 
+        Kuigi enamus CASE-vahendeid integreerib endas ka mitme erineva etapi või mõlema taseme tööriistu, kategoriseeritakse tööriistad kahte peamisesse kategooriasse:
         <ul>
             <li><a href="./uppercase.html">UpperCASE vahendid</a></li>
             <li><a href="./lowercase.html">LowerCASE vahendid</a></li>
         </ul><br/>
-        CASE vahendid lubavad teha mingi ühe tegevuse või otsast-otsani arendustööd. Enamus CASE vahendeid <br/>
-        integreerib endas ka mitme erineva etapi või mõlema taseme tööriistu.
-    </p><br/><br/>
-    <h1>Näide, kuidas inkrementaalses arendusmudelis CASE vahendeid rakendada saab ning nende tööriistade lühikirjeldus</h1>
+        
+    </p><br/>
+    <h2>Näide, kuidas inkrementaalses arendusmudelis CASE vahendeid rakendada saab</h2>
     <p>
-        <h2>Inkrementaalne arendusmudel</h2>
-        Inkrementaalne arendusmudel on etapiviisiline ajagraafikut järgiv tegevuskava, kus süsteemi erinevaid osi arendatakse<br/>
-        erinevatel aegadel ning erineva kiirusega. Valminud osad inkrementeeritakse süsteemi külge kohe peale valmimist.<br/>
+        Inkrementaalne arendusmudel on etapiviisiline ajagraafikut järgiv tegevuskava, kus süsteemi erinevaid osi arendatakse erinevatel aegadel ning erineva kiirusega ning
+        valminud osad inkrementeeritakse süsteemi külge kohe peale valmimist.
         See omab endas järgmisi samme:<br/>
         <table>
             <thead>
                 <tr>
-                    <th>arendusmudeli samm</th>
-                    <th>sammus tehtavad tööd</th>
-                    <th>vastav CASE vahend</th>
-                    <th>CASE vahendi kirjeldus</th>
+                    <th>Arendusmudeli samm</th>
+                    <th>Sammus tehtavad tööd</th>
+                    <th>Vastav CASE vahend</th>
+                    <th>Tehtav töö</th>
+                    <th>CASE vahendi logo</th>
                 </tr>
             </thead> 
             <tbody>
                 <tr>
-                    <td>spetsifikatsioon</td>
-                    <td>luuakse algversioon</td>
-                    <td>upper CASE</td>
-                    <td>visualiseerib, koostab skeemi, loob dokumentatsiooni</td>
-                        <ul>
-                            <li>tehtav töö</li>
-                        </ul>
-                    <td>casevahendi nimi/logo</td>
-                    <td>casevahendi lühike kirjeldus</td>    
+                    <td>Spetsifikatsioon</td>
+                    <td>Luuakse algversioon</td>
+                    <td>Upper CASE</td>
+                    <td>Visualiseerib, koostab skeemi, loob dokumentatsiooni</td>
+                    <td></td>   
                 </tr>
             </tbody>   
 
         </table>
     </p>
+    </div>
 </body>
 </html>
