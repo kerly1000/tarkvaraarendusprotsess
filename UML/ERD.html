@@ -5,32 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {font-size: larger;background-color: rgb(247, 241, 218);}
+        body {font-size: larger;background-color: rgb(247, 241, 218); margin: 10;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 65ch; 
+            margin: 0 auto;
+            padding: 24px;
+        }
+
     </style>
 </head>
 <body>
+<button onclick="history.back()">Tagasi</button>
+<div class="container">
  <h1>Mis on ERD?</h1>
     <p>
-    ERD ehk Entity-Relationship Diagram (Olemisuhete diagramm). See on kõige<br/>
-    laiemalt levinud metoodika andmemudelite koostamiseks ja kirjelduse esitamiseks.<br/><br/>
+    ERD ehk Entity-Relationship Diagram (Olemidiagramm). See on kõige laiemalt levinud 
+    metoodika andmemudelite koostamiseks ja kirjelduse esitamiseks.
     </p>
     <h2>Kuidas andmebaasi luuakse?</h2>
     <p>
-        Andmebaasi luuakse samm-sammult. Esmalt koostatakse andmemudel, mida kirjeldatakse nii
-        detailselt, kui vaja on. Järgmiseks genereeritakse mudeli põhjal SQL-käsud (Structured Query Language),<br/> 
-        mille abil luuakse füüsiline andmebaas. Kui aja jooksul ilmneb vajadus andmebaasi struktuuri muuta,<br/> 
-        tehakse vastavad parandused või täiendused ERD-mudelisse ning selle alusel koostatakse uued SQL-käsud,<br/> 
-        millega viiakse andmebaasi struktuur mudeliga vastavusse.<br/><br/>
+        Andmebaasi luuakse samm-sammult. Esmalt koostatakse <b>andmemudel</b>, mida kirjeldatakse nii
+        detailselt, kui vaja on. Järgmiseks <b>genereeritakse</b> mudeli põhjal <b>SQL-käsud</b> (Structured 
+        Query Language), mille abil luuakse füüsiline andmebaas. Kui aja jooksul ilmneb vajadus 
+        andmebaasi struktuuri muuta, tehakse vastavad parandused või täiendused ERD-mudelisse 
+        ning selle alusel koostatakse uued SQL-käsud, millega viiakse andmebaasi struktuur 
+        mudeliga vastavusse.<br/><br/>
     </p>
     <h2>ERD põhikomponendid</h2>
     <p>
-        ERD peamised osad on olemid (entity) ja olemite vahelised seosed. Iga olemi sisemine<br/>
-        ülesehitus koosneb atribuutidest. Seose kirjeldamisel tuuakse välja nende olemite vastavad<br/>
-        atribuutide paarid, mille kaudu seos tekib ja mis määravad, kuidas kaks olemit omavahel<br/>
-        seotud on. Seos saab eksisteerida alati kas kahe erineva olemi vahel või ka olemi ja tema<br/>
+        ERD peamised osad on olemid (entity) ja olemite vahelised seosed. Iga olemi sisemine
+        ülesehitus koosneb atribuutidest. Seose kirjeldamisel tuuakse välja nende olemite vastavad
+        atribuutide paarid, mille kaudu seos tekib ja mis määravad, kuidas kaks olemit omavahel
+        seotud on. Seos saab eksisteerida alati kas kahe erineva olemi vahel või ka olemi ja tema
         enda vahel. Kui seos eksisteerib olemi ja enda vahel moodustab see suletud tsükli.<br/><br/> 
     </p>
     <h2>ERD võtmed (keyd)</h2>
+    <p>
+        <ul>
+            <li>Primaarvõti</li>
+            <li>Välisvõti</li>
+            <li>Lihtvõti</li>
+            <li>Liitvõti</li>
+        </ul>
+    </p>
     <p>
         <h2>ERD mudeli selgitus ja skeem </h2>
             <p>
@@ -47,5 +68,10 @@
             </p>
         <p>
     </p>
+<p>Olemiskeemi näidis</p><br/><br/>
+<img src="../pildid/olemidiagramm.jpg" width="650"><br/><br/>
+<p>Olemiskeemis kasutatavad tingmärgid:</p><br/><br/>
+<img src="../pildid/olemidiagrammitingmärgid.png"><br/>
+</div>
 </body>
 </html>
