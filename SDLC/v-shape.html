@@ -5,39 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minu tarkvara arendusprotsessi ainemapp</title>
     <style>
-        body {font-size: larger;background-color: rgb(247, 241, 218);}
+            body {font-size: larger;background-color: rgb(247, 241, 218); margin: 10;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+            }
+    
+            .container {
+                max-width: 65ch; 
+                margin: 0 auto;
+                padding: 24px;
+            }
+    
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>Document</title>
 </head>
-<body>
+<body>    
+    <button onclick="history.back()">Tagasi</button>        
+    <div class="container">
 <h1>V-Shape ehk V-mudel</h1><br/><br/>
-<p>V-mudel on tarkvaraarenduse protsessimudel, milles on arendamine ja testimine omavahel rangelt seotud.<br/>
-Mudeli nimi tuleneb selle V-tähele sarnanevast diagrammikujutisest, mis moodustub arendus- ja testimis-<br/> 
-faasidest. V-mudel on traditsioonilise kosk-mudeli edasiarendus, kus on olulisel kohal testimise planeerimine<br/>
-juba arendusprotsessi alguses.
+<p>V-mudel on tarkvaraarenduse protsessimudel, milles on arendamine ja testimine omavahel rangelt seotud. Mudeli nimi tuleneb selle V-tähele sarnanevast diagrammikujutisest, 
+mis moodustub arendus- ja testimisfaasidest. V-mudel on traditsioonilise kosk-mudeli edasiarendus, kus on olulisel kohal testimise planeerimine juba arendusprotsessi alguses.
 </p>  
 <h2>V-mudeli etapid</h2>  
 <p><br/>
 V-mudel koosneb kahest peamisest harust:
 <ul>
-    <li>Vasak haru ehk arendusetapid: sisaldab nõuete analüüsi, süsteemi-, arhitektuuri- ja detailset disaini<br/>
-    ning kodeerimist.</li>
-    <li>Parem haru ehk testimisetapid: sisaldab iga arendusfaasi testimist- vastuvõtu-, süsteemi-, integrattsiooni-<br/>
-    ja üksustestimine.</li>
+    <li>Vasak haru ehk arendusetapid: sisaldab nõuete analüüsi, süsteemi-, arhitektuuri- ja detailset disaini ning kodeerimist.</li>
+    <li>Parem haru ehk testimisetapid: sisaldab iga arendusfaasi testimist- vastuvõtu-, süsteemi-, integrattsiooni- ja üksustestimine.</li>
 </ul>
 </p>
 <img src="../pildid/v-shape.png"/><br/>
 <h3>V-mudeli etappidest lähemalt</h3><br/><br/>
 
 <ul>
-    <li>Nõuete analüüs: kogutakse kokku ja dokumenteeritakse arendatava süsteemi eesmärgid ja<br/>
-        kasutajate vajadused. Selle etapi lõpus toimub planeeritud vastuvõtutestimine. </li><br/>
-    <li>Süsteemi disain: koostatakse süsteemi arhitektuuriraamistik- keskendutakse funktsionaalsusele,<br/>
-        ja üldisele raamistikule. Selle etapi lõpus toimub süsteemi testimine.</li><br/>
-    <li>Detailne disain: täpsustatakse komponendid, moodulid, liidesed. Etapi lõpus toimub<br/> 
-        integratsioonitestimine.</li><br/>
+    <li>Nõuete analüüs: kogutakse kokku ja dokumenteeritakse arendatava süsteemi eesmärgid ja kasutajate vajadused. Selle etapi lõpus toimub planeeritud vastuvõtutestimine. </li><br/>
+    <li>Süsteemi disain: koostatakse süsteemi arhitektuuriraamistik- keskendutakse funktsionaalsusele ja üldisele raamistikule. Selle etapi lõpus toimub süsteemi testimine.</li><br/>
+    <li>Detailne disain: täpsustatakse komponendid, moodulid, liidesed. Etapi lõpus toimub integratsioonitestimine.</li><br/>
     <li>Kodeerimine: detailse disaini alusel rakendatakse kood, millele järgneb üksustestimine.</li><br/>
     <li>Testimine: iga arengufaasi lõpus viiakse läbi test, et kinnitada selle etapi väljundi õigsust.</li>
 </ul><br/><br/>
@@ -45,9 +47,8 @@ V-mudel koosneb kahest peamisest harust:
 <h3>V-mudeli oluliseim tunnusjoon...</h3><br/><br/>
 
 <p>
-    ... testimine! Antud mudeli kõige olulisemaks jooneks on pidev testimine peale igat etappi. See võimaldab<br/>
-    leida vead võimalikult vara, mis parandab oluliselt tarkvara kvaliteeti.
-</p><br/><br/>
+    ... testimine! Antud mudeli kõige olulisemaks jooneks on pidev testimine peale igat etappi. See võimaldab leida vead võimalikult vara, mis parandab oluliselt tarkvara kvaliteeti.
+</p><br/>
 
 
 
