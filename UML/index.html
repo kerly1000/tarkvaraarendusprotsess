@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minu tarkvara arendusprotsessi ainemapp</title>
     <style>
-        body {font-size: larger;background-color: rgb(247, 241, 218);}
+        body {font-size: larger;background-color: rgb(247, 241, 218); margin: 10;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 65ch; 
+            margin: 0 auto;
+            padding: 24px;
+        }
+
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UML diagrammikeel</title>
-</head>
 <body>
-    <h1>UML diagrammikeel</h1><br/>
+    <div class="container">
+    <h1>UML diagrammikeel</h1>
     <br/><br/>
-    <h1>Mis on UML?</h1><br/>
+    <h2>Mis on UML?</h2><br/>
     <p>
-            UML on visuaalne modelleerimiskeel, mis aitab tarkvaraarenduses nii kliendile, arendajale endile kui ka erinevatele muudele isikutele<br/>
-        protsessi juures kuvada täpsemalt, milline arendatava toote sisemine struktuur erinevatel tasanditel olema peaks. UML on aga ka haruskeel<br/>
-        ehk teisisõnu on erinevaid diagrammiliike nende erinevate tasandite kuvamise jaoks väga palju. UML defineerib ära nende erinevate tasandite<br/>
-        diagrammide notatsioonid, keskendudes siis nende spetsiifilistel tasemetel vajamineva kirjeldustele.<br/>
-        Tarkvaratoote käitumise kirjeldamiseks on näiteks käitumisdiagramm, andmestruktuuri kirjeldamiseks on näiteks ERD ehk olemidiagramm diagramm<br/>
-        ja nii erinevate aspektide kohta. UMLe kasutatakse nii uue arendustöö kirjeldamiseks kui ka olemasoleva dokumenteerimiseks.<br/>
-     </p><br/><br/>
-     <h1>Kuidas UML tekkis?</h1><br/>
-     <p>
-            UML tekkis vajadusest kujutada objektorienteeritud programmeerimise jaoks ühtset keelt, mis kuvaks <br/>
-        protsessi ilma koodita. Algselt tekkis see kui Grady Booch ja James Rumbaugh ühendasid oma diagrammikeeled,<br/>
-        kuhu siis aja jooksul tekkiski teisi harusid juurde. UML on ise akronüüm ingliskeelsest terminist <br/>
-        "Unified Modeling Language".<br/>
-     </p><br/><br/>
-     <h1>Mida saab kujutada UMLiga ehk kui palju erinevaid diagrammide liike olemas on?</h1><br/>
-     <P>
+        UML on <b>visuaalne modelleerimiskeel</b>, mida kasutatakse tarkvarasüsteemide arendamisel uue arendustöö kirjeldamiseks 
+        kui ka dokumenteerimiseks.. See aitab arendajatele (ja teistele isikutele) <b>kirjeldada, visualiseerida, konstrueerida ja 
+        dokumentaliseerida süsteemide arhitektuuri, disaini ja toimimist</b>. Erinevaid diagrammiliike on kasutusel väga palju, mille 
+        abil saab kuvada sõltuvalt arendatava projekti eesmärgist või etapist- näiteks tarkvaratoote käitumise kirjeldamiseks on 
+        käitumisdiagramm, andmestruktuuri kirjeldamiseks ERD ehk olemidiagramm diagramm jne.<br/>
+        Diagramme kasutatakse nii uue arendustöö kirjeldamiseks kui ka olemasoleva dokumenteerimiseks.
+    </p><br/>
+    <h2>Kuidas UML tekkis?</h2><br/>
+    <p>
+        UML tekkis vajadusest kujutada objektorienteeritud programmeerimise jaoks ühtset keelt, mis kuvaks protsessi ilma koodita. 
+        Algselt tekkis see kui Grady Booch ja James Rumbaugh ühendasid oma diagrammikeeled, kuhu siis aja jooksul lisandusid teised 
+        harud. UML on ise akronüüm ingliskeelsest terminist "Unified Modeling Language".
+    </p><br/>
+    <h2>Mida saab kujutada UMLiga ehk kui palju erinevaid diagrammide liike olemas on?</h2><br/>
+    <P>
             Erinevaid UML liike on palju. Näiteks:
             <ul>
                 <li><a href="flowchart.html">vooskeem (flow chart)</a></li>
@@ -49,24 +54,51 @@
                 <li>levitusskeem (deployment diagram)</li>
                 <li>paketiskeem (package diagram)</li>
                 <li>profiilidiagramm (profile diagram)</li>
-             </ul>
-     </P>
-     <h1>Mõningaid UML liike</h1><br/>
-     <h2>kasutuslooskeem</h2><br/>
-     <!-- kirjuta kodus kasutuslooskeemi kohta -->
-     <h2>klassidiagramm</h2><br/>
-     <!-- kirjuta kodus klassidiagrammi kohta -->
-     <h2>jadaskeem</h2><br/>
+            </ul>
+    </P>
+    <h2>Mõningaid UML liike</h2><br/>
+    <h3>Kasutuslooskeem ehk Use Case Diagram</h3>
+    Üks peamisi tööriistu süsteemi analüüsis ja disainis. Diagramm näitab süsteemi ja kasutajate vahelisi suhteid, 
+    st näitavad, kuidas kasutajad suhtlevad süsteemi osadega ning milliseid teenuseid see pakub.
+        <ul>
+            <li><b>Aktorit</b> kujutatakse sageli inimesena, et tähtsustada tema rolli protsessis.</li>
+            <li><b>Kasutusjuhtumeid</b> näidatakse ovaalidena ja need tähistavad tegevusi või teenuseid.</li>
+            <li><b>Ühendused</b> kasutusjuhtumite ja aktorite vahel näidatakse joonte või noolte abil. Noole suund määrab, 
+            kes teenust küsib või pakub.</li>
+        </ul><br/>
+    <img src="../pildid/kasutuslooskeem.png" width="600"><br/>
+    <a href="https://mariasmolina24.thkit.ee/wp/use-case-diagram/">Allikas (Maria Smolina)</a><br/> 
+
+    <h3>Klassidiagramm ehk Class Diagram</h3>
+    Klassidiagrammid näitavad täpselt süsteemi struktuuri, modelleerides selle klasse, omadusi, toiminguid ja seoseid objektide 
+    vahel.<br/> 
+    Neid kasutatakse objektorienteeritud süsteemide kavandamiseks ja mõistmiseks, st see on staatiline struktuuridiagramm, mis 
+    esitab süsteemi klasse, nende omadusi ja operatsioone ning klassidevahelisi seoseid, kirjeldades seeläbi süsteemi ülesehitust.
+        <ul>
+          <li><b>Nimed</b> on esimene rida, mida näete klassidiagrammil.</li>
+          <li><b>Atribuudid</b> on teine rida, kus kujutatakse atribuute.</li>
+          <li><b>Meetodid</b> on kolmas rida, kus kujutatakse operatsioone.</li>
+          <li><b>Signaal</b> on asünkroonne side objektide vahel.</li>
+          <li><b>Andmetüübid</b> määravad andmete väärtused.</li>
+          <li><b>Liidesed</b> on käitumiste kogum, mis on määratletud operatsioonide allkirjade ja atribuutide definitsioonide 
+            kogumiga. Klassid ja liidesed on sarnased, kuid liides nõuab selle rakendamiseks vähemalt ühte klassi.</li>
+          <li><b>Loendused</b> koosnevad identifikaatorite rühmitusest, mis tähistavad loendi väärtusi.</li>
+          <li><b>Objektid</b> esindavad prototüüpseid või konkreetseid juhtumeid.</li>
+          <li><b>Interaktsioonid</b> viitavad erinevatele seostele ja suhetele, mida võib näha klassi- ja objektidiagrammis.</li>
+        </ul>
+    <img src="../pildid/klassidiagramm.jpg" width="650">
+    <a href="https://kodu.ut.ee/~kerstit/PonsaAruanne.html">Allikas</a>
+     <h3>Jadaskeem ehk Sequence Diagram</h3>
      <!-- kirjuta kodus jadaskeemi kohta -->
-     <h2>olekuskeem</h2><br/>
+     <h3>Olekuskeem ehk State Diagram</h3>
      <!-- kirjuta kodus olekuskeemi kohta -->
-     <h2> vali ise</h2><br/>
+     <h3> vali ise</h3>
      <p>
         <!-- kirjuta kodus x kohta -->
         lühikirjeldus
         kujundite/joonte lahtiseletus
         üks näidisjoonis
      </p><br/><br/>
-    
+</div>    
 </body>
 </html>
