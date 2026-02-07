@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minu tarkvara arendusprotsessi ainemapp</title>
     <style>
-        body {font-size: larger;background-color: rgb(247, 241, 218); margin: 10;
-            font-family: Arial, sans-serif;
+        body {font-size: larger;
+            background-color: rgb(135, 146, 157); 
+            margin: 10;
+            font-family: 'Courier New', Courier, monospace;
             line-height: 1.6; 
+            box-shadow: -50px 0 0 #2c3e50, 50px 0 0 #2c3e50;
+            height: 100%                
         }
 
         .container {
@@ -16,11 +20,59 @@
             padding: 24px;
         }
 
+        .top-nav {
+            background-color: lightslategray;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .nav-button {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: rgb(47, 65, 79);
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .button-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: rgb(47, 65, 79);
+            padding: 12px 20px;
+            border-radius: 10px;
+            border-color: rgb(18, 27, 32);
+            border-width: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container">
+    <header class="top-nav">
+        <a href="Multimeedia/index.html" class="nav-button">MULTIMEEDIA</a>
+        <a href="Programmeerimise alused/" class="nav-button">PROGRAMMEERIMISE ALUSED</a>
+        <a href="PROJECT LIBRE/index.html" class="nav-button">PROJECT LIBRE</a>
+    </header>
     <h1>Tarkvara arendusprotsessi tunni raames koostatud ainemapp</h1>
     <br/>
     <p>
@@ -28,20 +80,20 @@
     </p>
     <h2>Tarkvara arendusprotsess</h2><br/>
     <h3>Teooria:</h3><br/>
-    <a href="./SDLC/sdlc.html">Üldiselt arendusprotsessist ja mudelitest</a><br/>
-    <a href="./CASE/index.html">CASE vahendid</a><br/>
-    <a href="./UML/index.html">Unified Modeling Language</a><br/>
-    <a href="./DOCS/index.html">Dokumentatsioon</a><br/><br/>
+    <a href="./SDLC/sdlc.html" class="button-link">Üldiselt arendusprotsessist ja mudelitest</a><br/>
+    <a href="./CASE/index.html" class="button-link">CASE vahendid</a><br/>
+    <a href="./UML/index.html" class="button-link">Unified Modeling Language</a><br/>
+    <a href="./DOCS/index.html" class="button-link">Dokumentatsioon</a><br/><br/>
 
     <h3>Praktika:</h3><br/>
 
-    <a href="./BTC/index.html">Bitcoin Calculator</a><br/>
-    <a href="./PROJECT LIBRE/">Project Libre</a><br/>
+    <a href="./BTC/index.html" class="button-link">Bitcoin Calculator</a><br/>
+    <a href="./PROJECT LIBRE/" class="button-link">Project Libre</a><br/>
     <br>
 
     <h3>Teised tegemised:</h3>
-    <a href="./Multimeedia/index.html">Multimeedia</a>
-    <a href="./Programmeerimise alused/index.html">Programmeerimise alused</a>
+    <a href="./Multimeedia/index.html" class="button-link">Multimeedia</a><br/>
+    <a href="./Programmeerimise alused/index.html" class="button-link">Programmeerimise alused</a>
 
     <h2> Kes ma olen?</h2><br/>
     <style>
@@ -60,14 +112,9 @@
     <tr>
         <td><img height="200"src="./pildid/kerly2small.jpg"/> </td>
     </tr> 
-        
-    
-    <tr>
-        <td colspan="4">
-<a href="https://github.com/kerly1000">Siin on minu githubi link</a>
-        </td>
-    </tr>
 </table>
-<a href="./klassikaaslaste kontaktid/ainemapid.html">Siin on meie kursuse ainemappide kogu</a>
+<a href="https://github.com/kerly1000" class="button-link">Siin on minu githubi link</a>
+
+<a href="./klassikaaslaste kontaktid/ainemapid.html" class="button-link">Siin on meie kursuse ainemappide kogu</a>
 </div>
 </html>
